@@ -1,0 +1,79 @@
+/*Start - Data Table*/
+.dataId, .dataPostId{
+	width: 200px !important;
+}
+
+#sortIcon{
+    font-size: 11px;
+    color: black;
+}
+/*End - Data Table*/
+
+/*Start - Pagination*/
+#paginationBottom{
+    margin-top: -10px !important;
+}
+
+#paginationTop{
+    margin-top: 15px !important;
+}
+
+#paginationItems{
+    font-size: 12px;
+    font-weight: bold;
+}
+/*End - Pagination*/
+
+/*Start - ResultsPerPage Dropdown*/
+#resultsPerPage{
+    width: 125px;
+    margin-bottom: 0px !important;
+}
+
+#labelResultsPerPage{
+    font-size: 12px;
+    margin: 0px !important;
+}
+/*End - ResultsPerPage Dropdown*/
+
+.highlighted{
+	font-weight:bold;
+	background-color: #acff9e;
+}
+
+#itemsTxt{
+    margin-bottom: 0px !important;
+}
+
+
+@media (max-width: 786px){
+    .commentsTable{
+        font-size: 11px;
+        width: 768px !important;
+    }
+
+    #paginationTop{
+        margin-right: -10px !important;
+    }
+
+    #paginationBottom{
+        margin-right: -10px !important;
+        margin-top: 5px !important;       
+    }
+
+    #resultsPerPage{
+        width: 100% !important;
+    }
+
+    #itemsTxt{
+        display: block;
+        padding-top: 15px !important;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px){
+    .commentsTable{
+        width: 500px !important;
+    }
+}
