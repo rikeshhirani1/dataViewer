@@ -1,13 +1,13 @@
 # Searching and Sorting Data Tables
-A small app created usign AngularJS which pulls and displays comments data from a RESTful API. The app has functionality such as searching data, sorting data and pagination.
+A small app created using AngularJS which pulls and displays comments data from a RESTful API. The app functionality includes searching data, sorting data and pagination.
 
 Pagination is a key feature of the application as it helps to reduce the amount of data fetched by HTTP GET request, rather than storing a large amount of data in memory, x amount of data is requested at a time.
 
 ### View application using GitHub Pages
 - https://rikeshhirani1.github.io/dataViewer/
 
-### Technogies Used and Choices
-- The technologies used: HTML5, AnugularJS, CSS and Bootstrap
+### Technologies Used and Choices
+- The technologies used: HTML5, AngularJS, CSS and Bootstrap
 - AngularJS
     - AngularJS was used as it's perfect for Single Page Applications (SPAs)
     - It extends HTML with new attributes and helps bind data to HTML with expressions
