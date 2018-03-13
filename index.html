@@ -58,10 +58,10 @@
 						<div class="text-center">
 							<ul class="pagination input-sm pull-right" id="paginationTop">
 								<li id="paginationItems" class="page-item" ng-class="{disabled: (pageNo == 1)}">
-									<a class="page-link" href="#" ng-click="setPage(1)">First</a>				      		
+									<a class="page-link" href="#" ng-click="(pageNo == 1) ||setPage(1)">First</a>				      		
 								</li>
 								<li id="paginationItems" class="page-item" ng-class="{disabled: (pageNo == 1)}">
-									<a class="page-link" href="#" ng-click="setPage('prev')">Previous</a>				      		
+									<a class="page-link" href="#" ng-click="(pageNo == 1) ||setPage('prev')">Previous</a>				      		
 								</li>
 								<!--
 								<li id="paginationItems" class="page-item" ng-repeat="i in getNumber(maxPages) track by $index" ng-class="{active: ($index+1) == pageNo}">
@@ -69,10 +69,10 @@
 								</li>
 								-->				    
 								<li id="paginationItems" class="page-item"  ng-class="{disabled: pageNo == maxPages}">
-									<a class="page-link" href="#" ng-click="setPage('next')">Next</a>
+									<a class="page-link" href="#" ng-click="(pageNo == maxPages) || setPage('next')">Next</a>
 								</li>
 								<li id="paginationItems" class="page-item"  ng-class="{disabled: pageNo == maxPages}">
-									<a class="page-link" href="#" ng-click="setPage(maxPages)">Last</a>
+									<a class="page-link" href="#" ng-click="(pageNo == maxPages) || setPage(maxPages)">Last</a>
 								</li>
 							</ul>
 						</div>
@@ -141,10 +141,10 @@
 					<div class="text-center">
 						<ul class="pagination input-sm pull-right"  id="paginationBottom">
 							<li id="paginationItems" class="page-item" ng-class="{disabled: (pageNo == 1)}">
-							    <a class="page-link" href="#" ng-click="setPage(1)">First</a>				      		
+							    <a class="page-link" href="#" ng-click="(pageNo == 1) ||setPage(1)">First</a>				      		
 							</li>
 							<li id="paginationItems" class="page-item" ng-class="{disabled: (pageNo == 1)}">
-							    <a class="page-link" href="#" ng-click="setPage('prev')">Previous</a>				      		
+							    <a class="page-link" href="#" ng-click="(pageNo == 1) ||setPage('prev')">Previous</a>				      		
 							</li>
 							<!--
 							<li id="paginationItems" class="page-item" ng-repeat="i in getNumber(maxPages) track by $index" ng-class="{active: ($index+1) == pageNo}">
@@ -152,10 +152,10 @@
 							</li>
 							-->				    
 							<li id="paginationItems" class="page-item"  ng-class="{disabled: pageNo == maxPages}">
-								<a class="page-link" href="#" ng-click="setPage('next')">Next</a>
+								<a class="page-link" href="#" ng-click="(pageNo == maxPages) || setPage('next')">Next</a>
 							</li>
 							<li id="paginationItems" class="page-item"  ng-class="{disabled: pageNo == maxPages}">
-								<a class="page-link" href="#" ng-click="setPage(maxPages)">Last</a>
+								<a class="page-link" href="#" ng-click="(pageNo == maxPages) || setPage(maxPages)">Last</a>
 							</li>
 						</ul>
 					</div>
