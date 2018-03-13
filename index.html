@@ -30,10 +30,10 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-				      	</button>
+					</button>
 					<a class="navbar-brand" href="#">Comments Data Viewer</a>
-			 	</div>
-            		</div>
+				</div>
+			</div>
 		</nav>
 		
 		<div ng-controller="dataTable" class="container">
@@ -43,8 +43,8 @@
 			    		<span class="input-group-addon">
 						<span class="glyphicon glyphicon-search"></span>
 					</span>		            
-		        	</div>
-                		<br>
+				</div>
+				<br>
 
 				<div class="row">
 				    	<div class="col-xs-12 col-sm-4">
@@ -55,64 +55,66 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-8">
-					<div class="text-center">
-				    		<ul class="pagination input-sm pull-right" id="paginationTop">
-                                			<li id="paginationItems" class="page-item" ng-class="{disabled: (pageNo == 1)}">
-				      		        	<a class="page-link" href="#" ng-click="setPage(1)">First</a>				      		
-					            	</li>
-				    	        	<li id="paginationItems" class="page-item" ng-class="{disabled: (pageNo == 1)}">
-				      		        	<a class="page-link" href="#" ng-click="setPage('prev')">Previous</a>				      		
-					            	</li>
-                                			<!--
-					            	<li id="paginationItems" class="page-item" ng-repeat="i in getNumber(maxPages) track by $index" ng-class="{active: ($index+1) == pageNo}">
-								<a class="page-link" href="#" ng-click="setPage($index+1)">{{$index+1}}</a>
-					            	</li>
-							-->				    
-					            	<li id="paginationItems" class="page-item"  ng-class="{disabled: pageNo == maxPages}">
-						            	<a class="page-link" href="#" ng-click="setPage('next')">Next</a>
-					            	</li>
-							<li id="paginationItems" class="page-item"  ng-class="{disabled: pageNo == maxPages}">
-						            	<a class="page-link" href="#" ng-click="setPage(maxPages)">Last</a>
-					            	</li>
-				            	</ul>
-                        		</div>
-				</div>          
-                	</div>
-                
-                
-               		<div class="table-responsive">
-                    		<div class="">
-				        <table class="table table-hover table-striped table-border commentsTable" id="dataTablesComments">
-					        <thead>
-						        <tr>
-								<th class="col-xs-1 col-md-1 dataID">
-									<a href="#" ng-click="sortData('id')">
-								        ID
-								        <span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='id'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span>
-								        </a>
-							        </th>
-							        <th class="col-xs-1 col-md-1 dataPostID">
-								        <a href="#" ng-click="sortData('postID')">
-								        PostID
-								        <span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='postID'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span>
-								        </a>
-							        </th>
-							        <th class="col-xs-2 col-md-2 dataEmail">
-								        <a href="#" ng-click="sortData('email')">
-								        Email
-								        <span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='email'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span></a>
-							        </th>
-							        <th class="col-xs-2 col-md-2 dataName">
-                                        				<a href="#" ng-click="sortData('name')">
-								        Name
-								        <span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='name'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span>
-								        </a>
-							        </th>
-							        <th class="col-xs-6 col-md-6 dataBody">
-									<a href="#" ng-click="sortData('body')">
-								        Body
-								        <span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='body'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span></a></th>
-								</th>
+						<div class="text-center">
+							<ul class="pagination input-sm pull-right" id="paginationTop">
+								<li id="paginationItems" class="page-item" ng-class="{disabled: (pageNo == 1)}">
+									<a class="page-link" href="#" ng-click="setPage(1)">First</a>				      		
+								</li>
+								<li id="paginationItems" class="page-item" ng-class="{disabled: (pageNo == 1)}">
+									<a class="page-link" href="#" ng-click="setPage('prev')">Previous</a>				      		
+								</li>
+								<!--
+								<li id="paginationItems" class="page-item" ng-repeat="i in getNumber(maxPages) track by $index" ng-class="{active: ($index+1) == pageNo}">
+									<a class="page-link" href="#" ng-click="setPage($index+1)">{{$index+1}}</a>
+								</li>
+								-->				    
+								<li id="paginationItems" class="page-item"  ng-class="{disabled: pageNo == maxPages}">
+									<a class="page-link" href="#" ng-click="setPage('next')">Next</a>
+								</li>
+								<li id="paginationItems" class="page-item"  ng-class="{disabled: pageNo == maxPages}">
+									<a class="page-link" href="#" ng-click="setPage(maxPages)">Last</a>
+								</li>
+							</ul>
+						</div>
+					</div>          
+				</div>
+				
+				<div class="table-responsive">
+					<div class="">
+						<table class="table table-hover table-striped table-border commentsTable" id="dataTablesComments">
+							<thead>
+								<tr>
+									<th class="col-xs-1 col-md-1 dataID">
+										<a href="#" ng-click="sortData('id')">
+										ID
+										<span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='id'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span>
+										</a>
+									</th>
+									<th class="col-xs-1 col-md-1 dataPostID">
+										<a href="#" ng-click="sortData('postID')">
+										PostID
+										<span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='postID'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span>
+										</a>
+									</th>
+									<th class="col-xs-2 col-md-2 dataEmail">
+										<a href="#" ng-click="sortData('email')">
+										Email
+										<span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='email'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span>
+										</a>
+									</th>
+									<th class="col-xs-2 col-md-2 dataName">
+										<a href="#" ng-click="sortData('name')">
+										Name
+										<span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='name'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span>
+										</a>
+									</th>
+									<th class="col-xs-6 col-md-6 dataBody">
+										<a href="#" ng-click="sortData('body')">
+										Body
+										<span class="glyphicon sort-icon" id="sortIcon" ng-show="sortKey=='body'" ng-class="{'glyphicon-chevron-up':order,'glyphicon-chevron-down':!order}"></span>
+										</a>
+									</th>
+								</tr>
 							</thead>
 							<tbody>
 								<!--ng-repeat - repeats a set of HTML Code a certain number of times-->
