@@ -4,6 +4,7 @@ A small app created usign AngularJS which pulls and displays comments data from 
 Pagination is a key feature of the application as it helps to reduce the amount of data fetched by HTTP GET request, rather than storing a large amount of data in memory, x amount of data is requested at a time.
 
 ### View application using GitHub Pages
+- https://rikeshhirani1.github.io/dataViewer/
 
 ### Technogies Used and Choices
 - The technologies used: HTML5, AnugularJS, CSS and Bootstrap
